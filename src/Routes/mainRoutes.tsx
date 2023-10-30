@@ -13,7 +13,7 @@ const LANDING = {
 };
 
 const PAGE ={
-	INSIDENTS: lazy(() => import('../pages/customer/presentation/cart/Insidents')),
+	INSIDENTS: lazy(() => import('../pages/customer/presentation/cart/Cart')),
 
 }
 

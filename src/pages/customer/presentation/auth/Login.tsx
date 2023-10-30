@@ -1,14 +1,12 @@
-import React, { FC, useState, startTransition } from "react";
-import PageWrapper from "../../../layout/pageWrapper/PageWrapper";
-import Page from "../../../layout/page/Page";
-import Box from "../../../components/bootstrap/Box";
+import React, { FC, useState } from "react";
+import Box from "../../../../components/bootstrap/Box";
 import { Button } from "@mui/material";
 import { useFormik } from "formik";
 import { Link } from "react-router-dom";
-import { FormGroup, FormControl, Input, InputLabel } from "@mui/material";
+import { FormGroup, FormControl, Input } from "@mui/material";
 import Signup from "./Signup";
 import logo from "../../../components/assets/10186541_goal_aim_achievement_target_business_icon 1.svg"
-import Container from "../../../components/bootstrap/Container"
+import Container from "../../../../components/bootstrap/Container"
 
 import { FormLabel } from '@mui/material';
 
@@ -86,8 +84,7 @@ const Login: FC<ILoginProps> = ({ isSignUp }) => {
   });
 
   return (
-    // <PageWrapper title={singUpStatus ? "Sign Up" : "Login"}>
-    //   <Page >
+ 
 	<Container > 
         <Box>
 			

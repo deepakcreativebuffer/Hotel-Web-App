@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import contents from '../../Routes/mainRoutes';
 // import ResetPasswordPage from '../../pages/presentation/auth/ResetPasswordPage';
 
-const PAGE_404 = lazy(() => import('../../pages/presentation/auth/Page404'));
+const PAGE_404 = lazy(() => import('../../pages/customer/presentation/auth/Page404'));
 const ContentRoutes = () => {
 	return (
 		<Routes>
