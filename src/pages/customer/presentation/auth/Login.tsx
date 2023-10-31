@@ -5,7 +5,6 @@ import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 import { FormGroup, FormControl, Input } from "@mui/material";
 import Signup from "./Signup";
-import logo from "../../../components/assets/10186541_goal_aim_achievement_target_business_icon 1.svg"
 import Container from "../../../../components/bootstrap/Container"
 
 import { FormLabel } from '@mui/material';
@@ -102,7 +101,7 @@ const Login: FC<ILoginProps> = ({ isSignUp }) => {
               {/* <div className="text-center display-2 fw-bold mb-5 lh-1">
                 ISMS
               </div> */}
-			  <img src={logo} alt='logo' />
+			  {/* <img src={logo} alt='logo' /> */}
             </Link>
           </div>
           <div

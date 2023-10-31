@@ -17,13 +17,38 @@ export const pagesMenu = {
 	dashboard: {
 		id: 'dashboard',
 		text: 'Dashboard',
+		path: '/dashboard',
+	},
+	cart: {
+		id: 'Cart',
+		text: 'Cart',
+		path: '/cart',
+	},
+	splash:{
+		id: 'Splash',
+		text: 'Splash',
 		path: '/',
 	},
-	insidents: {
-		id: 'Insidents',
-		text: 'Insidents',
-		path: '/insidents',
+	scan:{
+		id: 'Scan',
+		text: 'Scan',
+		path: '/scan',
 	},
+	menu:{
+		id: 'Menu',
+		text: 'Menu',
+		path: '/menu',
+	},
+	contact:{
+		id: 'Contact',
+		text: 'Contact',
+		path: '/contact',
+	},
+	trackStatus:{
+		id: 'TrackStatus',
+		text: 'TrackStatus',
+		path: '/trackstatus',
+	}
 }
 
 
