@@ -99,6 +99,7 @@ export const MenuWrappper = styled(Box)`
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        font-weight:600;
       }
     }
   }

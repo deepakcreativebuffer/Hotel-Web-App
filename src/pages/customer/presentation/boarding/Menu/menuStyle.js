@@ -20,7 +20,6 @@ export const MenuWrappper = styled(Box)`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 10px;
 
       .menuItem {
         height: 6vh;
@@ -53,7 +52,7 @@ export const MenuWrappper = styled(Box)`
       div:nth-child(4) {
         height: 8vh;
         background-color: #07076d;
-        margin-top: 80px;
+        margin-top: 60px;
         border: dotted white;
         color: #ffffff;
         display: flex;
