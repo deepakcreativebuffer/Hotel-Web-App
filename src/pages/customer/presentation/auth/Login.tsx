@@ -12,7 +12,7 @@ import { FormLabel } from '@mui/material';
 interface ILoginHeaderProps {
   isNewUser?: boolean;
 }
-const LoginHeader: FC<ILoginHeaderProps> = ({ isNewUser }) => {
+const LoginHeader: FC<ILoginHeaderProps> = ({ isNewUser  }) => {
   if (isNewUser) {
     return (
       <>

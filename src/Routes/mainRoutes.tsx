@@ -41,11 +41,7 @@ const LANDING = {
 const PAGE = {
   CART: lazy(() => import("../pages/customer/presentation/cart/Cart")),
 };
-
-export const presentation = [
-  /**
-   * Auth Page
-   */
+export const authPages=[
   {
     path: pagesMenu.page404.path,
     element: <AUTH.PAGE_404 />,
@@ -61,10 +57,10 @@ export const presentation = [
     element: <AUTH.SIGNUP />,
   },
 
-  /**
+   /**
    * Boarding Page
    */
-  {
+   {
     path: pagesMenu.splash.path,
     element: <BOARDING.SPLASH />,
   },
@@ -77,11 +73,16 @@ export const presentation = [
     path: pagesMenu.menu.path,
     element: <BOARDING.MENU />,
   },
+]
+export const presentation = [
+  /**
+   * Auth Page
+   */
+  
 
-  {
-    path: pagesMenu.menu.path,
-    element: <BOARDING.MENU />,
-  },
+ 
+
+
 
   /**
    * Track Order Page
@@ -108,6 +109,6 @@ export const presentation = [
   },
 ];
 
-const contents = [...presentation];
+const contents = [...presentation,...authPages];
 
 export default contents;

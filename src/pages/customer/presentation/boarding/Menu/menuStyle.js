@@ -1,6 +1,28 @@
 import { Box, styled } from "@mui/material";
 
 export const MenuWrappper = styled(Box)`
+
+// .page{
+// 	flex-basis: 100%;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	transition: margin-left 1s;
+// }
+
+// .page-with-navbar{
+// 	margin-left: 15%;
+// }
+
+// @media only screen and (max-width: 768px){
+// 	.page-with-navbar{
+// 		width: 100%;
+// 		margin-left: 0;
+// 	}
+
+// }
+
+
   @media (max-width: 768px) {
     height: 100vh;
     width: 100vw;

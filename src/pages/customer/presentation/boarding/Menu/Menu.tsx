@@ -7,25 +7,30 @@ import desertIcon from "../../../../../components/assets/images/deserticon.png"
 import trackIcon from "../../../../../components/assets/images/trackicon.png"
 import { useNavigate } from "react-router-dom";
 import { pagesMenu } from "../../../../../menu";
-const Menu = () => {
+const Menu = ({show}:any) => {
 const navigate = useNavigate();
 const trackOrderHandler =()=>{
     navigate(`../${pagesMenu.contact.path}`)
 }
 
+const menuHandler =()=>{
+  navigate(`../${pagesMenu.dashboard.path}`)
+
+}
+
   return (
     <MenuWrappper>
-      <div className="logoWrapper">
+      <div  className = {   `logoWrapper ${pagesMenu.menu.navBar === "false" ? 'page' : 'page page-with-navbar'}` }>
         <img src={logo} alt="logo" />
       </div>
       <div className="content_box">
-        <div className="menuItem">
+        <div className="menuItem" onClick={menuHandler}>
             <div className="icon">
                 <img src={foodIcon} alt='icon' />
              </div>
             <p>Food Menu</p>
         </div>
-        <div className="menuItem">
+        <div className="menuItem" onClick={menuHandler}>
         <div className="icon" >
             <img src={drinkIcon} alt='icon' />
              </div>

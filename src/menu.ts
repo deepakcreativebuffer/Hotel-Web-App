@@ -38,6 +38,7 @@ export const pagesMenu = {
 		id: 'Menu',
 		text: 'Menu',
 		path: '/menu',
+		navBar:'false'
 	},
 	contact:{
 		id: 'Contact',
@@ -49,6 +50,7 @@ export const pagesMenu = {
 		text: 'TrackStatus',
 		path: '/trackstatus',
 	}
+	
 }
 
 
