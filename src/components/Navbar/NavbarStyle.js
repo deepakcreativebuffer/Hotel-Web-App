@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const NavBarWrappper = styled(Box)`
   nav {
@@ -87,7 +87,7 @@ export const NavBarWrappper = styled(Box)`
   .mobile-nav {
     background-color: #07076d;
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: none;
     display: flex;
     flex-direction: row;
