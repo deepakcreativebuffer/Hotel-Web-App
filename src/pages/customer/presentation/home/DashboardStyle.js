@@ -9,6 +9,33 @@ export const DashboardWrappper = styled(Box)`
       transition: margin-right 1s ease;
     }
 
+    .chatfixed {
+      background: #fff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      position: fixed;
+      bottom: 90px;
+      right: 10px;
+      border-radius: 100px;
+      z-index: 99;
+
+      .chat {
+        background: transparent;
+        border: none;
+        outline: none;
+        img {
+          width: 24px;
+        }
+      }
+    }
+
     .header {
       display: flex;
       flex-direction: column;
@@ -45,16 +72,33 @@ export const DashboardWrappper = styled(Box)`
         justify-content: space-between;
         margin-top: 5px;
         color: white;
+        margin-bottom: 15px;
         img {
-          width: 5vw;
-          height: 2vh;
+          width: 4vw;
+          height: 1.5vh;
           margin-right: 10px;
         }
         .table_no {
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
-          margin-left: 6px;
+          margin-left: 20px;
+          align-items: center;
+
+          background: transparent;
+          outline: none;
+          border: none;
+          color: #9e9efd;
+          font-size: 12px;
+          p {
+            margin: 0;
+          }
+          .number {
+            border: #9e9efd solid thin;
+            color: #fff;
+            padding: 2px 5px;
+            display: inline-block;
+          }
         }
       }
     }

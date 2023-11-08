@@ -5,6 +5,8 @@ import { navAction } from '../../../../store/Slices/NavbarSlice';
 import { DashboardWrappper } from './DashboardStyle';
 import closeBtn from '../../../../components/assets/images/close.png';
 import menuBtn from '../../../../components/assets/images/menu.png';
+import chatIcon from '../../../../components/assets/images/chaticon.png';
+import tableIcon from '../../../../components/assets/images/table.png';
 import Card1 from '../../../../components/bootstrap/Cards/Card1/Card1';
 import Card2 from '../../../../components/bootstrap/Cards/Card2/Card2';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
@@ -13,6 +15,7 @@ import Card3 from '../../../../components/bootstrap/Cards/Card3/Card3';
 import Card4 from '../../../../components/bootstrap/Cards/Card4/Card4';
 import Card5 from '../../../../components/bootstrap/Cards/Card5/Card5';
 import Card6 from '../../../../components/bootstrap/Cards/Card6/Card6';
+import { Link } from 'react-router-dom';
 
 const DashboardPage = ({ show }: any) => {
   const visible: boolean = useSelector((state: any) => state.nav.show);
@@ -52,9 +55,9 @@ const DashboardPage = ({ show }: any) => {
           </div>
           <div className="table_row">
             <div className="table_no">
-              <FaAngleLeft size={20} />
+              <img src={tableIcon} alt="tableIcon" />
               <p>Table No.</p>
-              <p>04</p>
+              <p className="number">04</p>
             </div>
             <img src={menuBtn} alt="gridIcon" />
           </div>
@@ -159,6 +162,11 @@ const DashboardPage = ({ show }: any) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="chatfixed">
+        <Link className="chat" to="/">
+          <img src={chatIcon} alt="" />
+        </Link>
       </div>
     </DashboardWrappper>
   );
