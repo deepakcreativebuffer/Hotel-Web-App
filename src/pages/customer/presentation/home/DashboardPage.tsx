@@ -16,6 +16,7 @@ import Card4 from '../../../../components/bootstrap/Cards/Card4/Card4';
 import Card5 from '../../../../components/bootstrap/Cards/Card5/Card5';
 import Card6 from '../../../../components/bootstrap/Cards/Card6/Card6';
 import { Link } from 'react-router-dom';
+import Card7 from '../../../../components/bootstrap/Cards/Card7/Card7';
 
 const DashboardPage = ({ show }: any) => {
   const visible: boolean = useSelector((state: any) => state.nav.show);
@@ -82,6 +83,23 @@ const DashboardPage = ({ show }: any) => {
               >
                 <Card2 />
                 <Card2 />
+              </Carousel>
+            </div>
+          </div>
+          <div className="section">
+            <div className="title">Best Top Selling Foods </div>
+            <div className="dishlist">
+              <Carousel
+                showStatus={false}
+                showThumbs={false}
+                showIndicators={false}
+                interval={1}
+                showArrows={false}
+                infiniteLoop={true}
+                className="custom-carousel"
+              >
+                <Card7 />
+                <Card7 />
               </Carousel>
             </div>
           </div>

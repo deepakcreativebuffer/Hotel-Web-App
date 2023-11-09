@@ -40,19 +40,11 @@ export const CardWrappper = styled(Box)`
           font-size: 14px;
           margin-bottom: 0px;
           font-weight: 600;
-          margin-top: 10px;
+          margin-top: 5px;
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
           width: 170px;
-          text-align: justify;
-        }
-
-        .smlltxt {
-          font-size: 10px;
-          display: block;
-          color: #1b1b1b;
-          line-height: normal;
           text-align: justify;
         }
       }
@@ -75,7 +67,7 @@ export const CardWrappper = styled(Box)`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 0px;
 
     .cartquantity {
       .status {
